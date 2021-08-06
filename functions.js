@@ -1,9 +1,8 @@
 //function to clear canvas
 function clearCanvas()
 {
-	ctx.fillStyle="white";
+	ctx.fillStyle="black";
 	ctx.fillRect(-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);
-	ctx.clearRect(-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);
 }
 
 //function to draw a point(drawing square)

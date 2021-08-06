@@ -1,8 +1,9 @@
 //setup the canvas
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-canvas.width = 500;
-canvas.height = 500;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+document.body.style.margin = "0";
 
 //translate drawing to the center
 ctx.translate(canvas.width/2, canvas.height/2);
@@ -67,8 +68,8 @@ function draw(){
  rotationX[0][0] = 1;
 
 //color for points
-ctx.fillStyle="black";
-
+ctx.fillStyle="white";
+ctx.strokeStyle="white";
 //array for calculated rotated and projected points
 var projected = new Array(8);
 var rotated = new Array(8);
